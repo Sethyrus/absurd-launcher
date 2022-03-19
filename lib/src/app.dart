@@ -6,9 +6,13 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Flutter Demo',
-      home: HomeScreen(),
+      theme: ThemeData(
+        scaffoldBackgroundColor: const Color(0xffffffff).withOpacity(0),
+        backgroundColor: const Color(0xffffffff).withOpacity(0),
+      ),
+      home: const HomeScreen(),
     );
   }
 }
